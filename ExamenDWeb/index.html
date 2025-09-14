@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Profile - Jaider Manrique</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="header-left">
+                <div class="logo">
+                    <span class="logo-text">facebook</span>
+                </div>
+                <div class="search-container">
+                    <input type="text" placeholder="Buscar en Facebook" class="search-input">
+                    <button class="search-btn">🔍</button>
+                </div>
+            </div>
+            <nav class="header-nav">
+                <a href="#" class="nav-link">Inicio</a>
+                <a href="#" class="nav-link">Perfil</a>
+                <a href="#" class="nav-link">Amigos</a>
+                <a href="#" class="nav-link">Mensajes</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Profile Header -->
+        <section class="profile-header">
+            <div class="profile-cover">
+                <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&h=400&fit=crop" alt="Portada" class="cover-image">
+            </div>
+            <div class="profile-info">
+                <div class="profile-picture">
+                    <img src="images/profile-dog.jpeg" alt="Jaider Manrique" class="profile-img">
+                </div>
+                <div class="profile-details">
+                    <h1 class="profile-name">Jaider Manrique</h1>
+                    <p class="profile-subtitle">Estudiante de Ingeniería de Sistemas - Unicatolica</p>
+                    <p class="profile-location">Cali, Colombia</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Navigation Tabs -->
+        <nav class="profile-nav">
+            <button class="tab-btn active" data-tab="muro">Muro</button>
+            <button class="tab-btn" data-tab="info">Info</button>
+            <button class="tab-btn" data-tab="photos">Photos</button>
+            <button class="tab-btn" data-tab="boxes">Boxes</button>
+        </nav>
+
+        <!-- Content Sections -->
+        <div class="content-container">
+            <!-- Muro Section -->
+            <section id="muro" class="tab-content active">
+                <div class="posts-container">
+                    <div class="post-composer">
+                        <div class="composer-header">
+                            <img src="images/profile-dog.jpeg" alt="Jaider" class="composer-avatar">
+                            <input type="text" placeholder="¿Qué estás pensando, Jaider?" class="composer-input">
+                        </div>
+                        <div class="composer-actions">
+                            <button class="action-btn">📷 Foto/Video</button>
+                            <button class="action-btn">😊 Sentimiento</button>
+                            <button class="action-btn">📍 Ubicación</button>
+                        </div>
+                    </div>
+
+                    <div class="post">
+                        <div class="post-header">
+                            <img src="images/profile-dog.jpeg" alt="Jaider" class="post-avatar">
+                            <div class="post-info">
+                                <h3 class="post-author">Jaider Manrique</h3>
+                                <p class="post-time">Hace 2 horas</p>
+                            </div>
+                        </div>
+                        <div class="post-content">
+                            <p>¡Terminando mi proyecto de desarrollo web! 💻 Muy emocionado de presentar mi simulación de Facebook como SPA. #WebDevelopment #Unicatolica</p>
+                            <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=500&h=300&fit=crop" alt="Coding" class="post-image">
+                        </div>
+                        <div class="post-actions">
+                            <button class="action-btn">👍 Me gusta</button>
+                            <button class="action-btn">💬 Comentar</button>
+                            <button class="action-btn">📤 Compartir</button>
+                        </div>
+                    </div>
+
+                    <div class="post">
+                        <div class="post-header">
+                            <img src="images/profile-dog.jpeg" alt="Jaider" class="post-avatar">
+                            <div class="post-info">
+                                <h3 class="post-author">Jaider Manrique</h3>
+                                <p class="post-time">Ayer</p>
+                            </div>
+                        </div>
+                        <div class="post-content">
+                            <p>Hermoso atardecer en Cali 🌅 ¡Amo mi ciudad!</p>
+                            <img src="images/landscape-post.jpeg" alt="Paisaje hermoso" class="post-image">
+                        </div>
+                        <div class="post-actions">
+                            <button class="action-btn">👍 Me gusta</button>
+                            <button class="action-btn">💬 Comentar</button>
+                            <button class="action-btn">📤 Compartir</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Info Section -->
+            <section id="info" class="tab-content">
+                <div class="info-grid">
+                    <div class="info-card">
+                        <h3 class="info-title">Información Personal</h3>
+                        <div class="info-item">
+                            <span class="info-label">💼 Trabajo:</span>
+                            <span class="info-value">Estudiante</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">🎓 Educación:</span>
+                            <span class="info-value">Ingeniería de Sistemas - Unicatolica</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">📍 Ubicación:</span>
+                            <span class="info-value">Cali, Colombia</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">💕 Estado:</span>
+                            <span class="info-value">Soltero</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">📅 Se unió:</span>
+                            <span class="info-value">Enero 2024</span>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <h3 class="info-title">Información de Contacto</h3>
+                        <div class="info-item">
+                            <span class="info-label">📧 Email:</span>
+                            <span class="info-value">jose.manrique01@unicatolica.edu.co</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">📱 Teléfono:</span>
+                            <span class="info-value">+57 300 123 4567</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">🌐 Sitio Web:</span>
+                            <span class="info-value">www.jaidermanrique.dev</span>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <h3 class="info-title">Intereses</h3>
+                        <div class="interests-tags">
+                            <span class="interest-tag">💻 Programación</span>
+                            <span class="interest-tag">🎮 Gaming</span>
+                            <span class="interest-tag">📚 Lectura</span>
+                            <span class="interest-tag">🎵 Música</span>
+                            <span class="interest-tag">⚽ Fútbol</span>
+                            <span class="interest-tag">🎬 Cine</span>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <h3 class="info-title">Acerca de</h3>
+                        <p class="about-text">
+                            Estudiante apasionado por el desarrollo web y la tecnología. 
+                            Me encanta crear soluciones innovadoras y aprender nuevas tecnologías. 
+                            Actualmente cursando Ingeniería de Sistemas en Unicatolica, Cali.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Photos Section -->
+            <section id="photos" class="tab-content">
+                <div class="photos-header">
+                    <h2>Fotos</h2>
+                    <button class="add-photos-btn">+ Agregar Fotos</button>
+                </div>
+                <div class="photos-grid">
+                    <div class="photo-item">
+                        <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=200&h=200&fit=crop" alt="Coding">
+                    </div>
+                    <div class="photo-item">
+                        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=200&h=200&fit=crop" alt="Cali">
+                    </div>
+                    <div class="photo-item">
+                        <img src="https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?w=200&h=200&fit=crop" alt="University">
+                    </div>
+                    <div class="photo-item">
+                        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=200&h=200&fit=crop" alt="Friends">
+                    </div>
+                    <div class="photo-item">
+                        <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=200&h=200&fit=crop" alt="Tech">
+                    </div>
+                    <div class="photo-item">
+                        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b0?w=200&h=200&fit=crop" alt="Nature">
+                    </div>
+                    <div class="photo-item">
+                        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=200&h=200&fit=crop" alt="Computer">
+                    </div>
+                    <div class="photo-item">
+                        <img src="images/profile-dog.jpeg" alt="Profile">
+                    </div>
+                    <div class="photo-item">
+                        <img src="images/landscape-post.jpeg" alt="Paisaje">
+                    </div>
+                </div>
+            </section>
+
+            <!-- Boxes Section -->
+            <section id="boxes" class="tab-content">
+                <div class="boxes-header">
+                    <h2>Boxes</h2>
+                    <button class="add-box-btn">+ Agregar Box</button>
+                </div>
+                <div class="boxes-grid">
+                    <div class="box-item">
+                        <div class="box-header">
+                            <h3>🎓 Educación</h3>
+                        </div>
+                        <div class="box-content">
+                            <p><strong>Unicatolica</strong></p>
+                            <p>Ingeniería de Sistemas</p>
+                            <p>2022 - Presente</p>
+                        </div>
+                    </div>
+
+                    <div class="box-item">
+                        <div class="box-header">
+                            <h3>💻 Proyectos</h3>
+                        </div>
+                        <div class="box-content">
+                            <p><strong>Facebook SPA</strong></p>
+                            <p>Simulación de perfil de Facebook</p>
+                            <p>HTML, CSS, JavaScript</p>
+                        </div>
+                    </div>
+
+                    <div class="box-item">
+                        <div class="box-header">
+                            <h3>🏆 Logros</h3>
+                        </div>
+                        <div class="box-content">
+                            <p><strong>Mejor Estudiante</strong></p>
+                            <p>Desarrollo Web I</p>
+                            <p>2024</p>
+                        </div>
+                    </div>
+
+                    <div class="box-item">
+                        <div class="box-header">
+                            <h3>🎯 Objetivos</h3>
+                        </div>
+                        <div class="box-content">
+                            <p><strong>Full Stack Developer</strong></p>
+                            <p>Especializarse en React y Node.js</p>
+                            <p>2024-2025</p>
+                        </div>
+                    </div>
+
+                    <div class="box-item">
+                        <div class="box-header">
+                            <h3>📚 Cursos</h3>
+                        </div>
+                        <div class="box-content">
+                            <p><strong>JavaScript Avanzado</strong></p>
+                            <p>Desarrollo Web Moderno</p>
+                            <p>En progreso</p>
+                        </div>
+                    </div>
+
+                    <div class="box-item">
+                        <div class="box-header">
+                            <h3>🌟 Habilidades</h3>
+                        </div>
+                        <div class="box-content">
+                            <p><strong>Frontend:</strong> HTML, CSS, JS</p>
+                            <p><strong>Backend:</strong> Node.js, Python</p>
+                            <p><strong>DB:</strong> MySQL, MongoDB</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
